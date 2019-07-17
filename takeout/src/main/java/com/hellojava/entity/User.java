@@ -10,7 +10,7 @@ import javax.persistence.Id;
 
 @Data
 @Entity
-public class userInfor {
+public class User {
 
 //    头像，用户名，账号密码，手机号码，收货地址（可多条），银行卡
 //   (via,usename,usepassward,phone,adress,bankcard)
