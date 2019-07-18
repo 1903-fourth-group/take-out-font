@@ -7,6 +7,8 @@ import com.hellojava.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserServiceImpl implements UserService {
     //@Autowired
@@ -20,5 +22,10 @@ public class UserServiceImpl implements UserService {
         if (userInfo ==null)
             return 0;
         return 1;
+    }
+
+    @Override
+    public List<User> loadAll(){
+        return userRepository.findAll ();
     }
 }

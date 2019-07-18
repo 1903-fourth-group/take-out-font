@@ -7,6 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@Table(name = "user_info")
 public class User {
 
     @Id
@@ -20,6 +21,7 @@ public class User {
     private String userPassword;
     private String phone;
     private String address;
+    @Column(name = "user_email")
+    private String userEmail;
     private Double balance;
-
 }
