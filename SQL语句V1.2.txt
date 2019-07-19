@@ -1,6 +1,6 @@
 
-//修改MySQL密码为统一的123456
-set password for root@localhost = password('123456');
+//修改MySQL密码为统一的Qy19960724=
+set password for root@localhost = password('Qy19960724=');
 
 //创建数据库
 CREATE DATABASE `takeout` ；
@@ -80,7 +80,7 @@ CREATE TABLE `commodity_info` (
 
 CREATE TABLE `shopping_order` (
   `order_id` int(11) NOT NULL,
-  `order_busniess` int(11) default NULL,
+  `order_business` int(11) default NULL,
   `current_user` varchar(16) default NULL,
   `order_address` varchar(40) default NULL,
   `order_phone` int(11) default NULL,
