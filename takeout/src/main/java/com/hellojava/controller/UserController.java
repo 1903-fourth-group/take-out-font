@@ -38,7 +38,14 @@ public class UserController {
         List<User> userList = userService.loadAll ();
         return userList;
     }
+    @ResponseBody
+    @RequestMapping(value = "/edit",method = RequestMethod.POST)
+    @ApiOperation (value = "修改用户信息,需要用户id")
+    public int edit(@RequestBody User user){
+     int res= userService.edit(user);
+     return res;
 
+    }
     @RequestMapping(value = "index",method = RequestMethod.GET)
     @ApiOperation("测试")
     public void loadsAll(){

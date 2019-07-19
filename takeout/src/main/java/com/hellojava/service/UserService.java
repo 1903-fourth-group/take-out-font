@@ -8,4 +8,5 @@ import java.util.List;
 public interface UserService {
     int checkLogin(String userName,String userPassword);
     List<User> loadAll();
+    int edit(User user);
 }
