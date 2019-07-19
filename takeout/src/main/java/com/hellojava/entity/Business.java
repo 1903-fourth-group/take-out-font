@@ -18,7 +18,11 @@ public class Business implements Serializable {
     @Column(name = "bus_img")
     private String busImg;
     @Column(name = "bus_address")
+<<<<<<< .merge_file_a05720
     private int busAddress;
+=======
+    private String busAddress;
+>>>>>>> .merge_file_a17576
     @Column(name = "bus_sales_permonth")
     private double busSalesPerMonth;
     @Column(name = "min_delivery")
