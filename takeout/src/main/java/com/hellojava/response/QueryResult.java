@@ -1,5 +1,6 @@
 package com.hellojava.response;
 
+import com.hellojava.entity.Admin;
 import lombok.Data;
 import lombok.ToString;
 
@@ -13,4 +14,7 @@ public class QueryResult<T> {
     private List<T> list;
     //数据总数
     private long total;
+
+    //判断
+    private Integer integer;
 }
